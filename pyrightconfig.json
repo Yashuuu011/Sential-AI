@@ -1,0 +1,9 @@
+{
+    "venvPath": "MalwareDetect",
+    "venv": "venv",
+    "executionEnvironments": [
+        {
+            "root": "MalwareDetect"
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "sentinel-ai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run dev:frontend",
+    "dev:frontend": "cd MalwareDetect/frontend && npm run dev",
+    "dev:backend": "cd MalwareDetect && .\\venv\\Scripts\\uvicorn.exe backend.main:app --reload",
+    "install:all": "npm install && cd MalwareDetect/frontend && npm install",
+    "test": "echo \"No tests yet\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "vite": "^7.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^10.0.3",
+    "nodemon": "^3.1.14"
+  }
+}
