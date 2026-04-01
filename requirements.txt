@@ -1,0 +1,2 @@
+# Include all dependencies from MalwareDetect
+-r MalwareDetect/requirements.txt
