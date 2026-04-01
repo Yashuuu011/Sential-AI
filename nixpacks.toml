@@ -1,9 +1,8 @@
-# Tell Nixpacks (Railway's builder) to treat this as a Python project
 [phases.setup]
-nixPkgs = ["python311"]
+nixPkgs = ["python311Full", "gcc"]
 
 [phases.install]
-cmds = ["cd MalwareDetect && pip install -r requirements.txt"]
+cmds = ["cd MalwareDetect && python -m pip install -r requirements.txt"]
 
 [start]
-cmd = "cd MalwareDetect && uvicorn backend.main:app --host 0.0.0.0 --port ${PORT:-8000}"
+cmd = "cd MalwareDetect && python -m uvicorn backend.main:app --host 0.0.0.0 --port ${PORT:-8000}"
