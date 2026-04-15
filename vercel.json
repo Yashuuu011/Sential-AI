@@ -3,6 +3,9 @@
   "outputDirectory": "MalwareDetect/frontend/dist",
   "framework": "vite",
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
   ]
 }
