@@ -1,0 +1,8 @@
+{
+  "buildCommand": "cd MalwareDetect/frontend && npm install && npm run build",
+  "outputDirectory": "MalwareDetect/frontend/dist",
+  "framework": "vite",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
